@@ -1,12 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.example.bluetooth" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>TestBluetooth</name>
-    <description>Sample Apache Cordova App</description>
-    <author email="dev@cordova.apache.org" href="https://cordova.apache.org">
-        Apache Cordova Team
+    <name>SoulFace</name>
+    <description>SoulFace App</description>
+    <author email="developer.fomenko.artjoms@gmail.com" href="https://fomenko.app">
+        Artjoms Fomenko
     </author>
     <content src="index.html" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <preference name="android-targetSdkVersion" value="28" />
+    <platform name="android">
+        <preference name="Scheme" value="http" />
+        <icon density="ldpi" src="resources/android/icons/ldpi.png" />
+        <icon density="mdpi" src="resources/android/icons/mdpi.png" />
+        <icon density="hdpi" src="resources/android/icons/hdpi.png" />
+        <icon density="xhdpi" src="resources/android/icons/xhdpi.png" />
+        <icon density="xxhdpi" src="resources/android/icons/xxhdpi.png" />
+        <icon density="xxxhdpi" src="resources/android/icons/xxxhdpi.png" />
+    </platform>
 </widget>
