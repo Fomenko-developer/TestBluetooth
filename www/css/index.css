@@ -1,0 +1,287 @@
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+}
+
+body {
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: none;
+    -webkit-user-select: none;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px)
+        env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px);
+    width: 100%;
+    background-color: white;
+}
+
+.button {
+    margin: 0;
+    display: block;
+    position: relative;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    outline: none;
+    height: 50px;
+    box-shadow: 0 0 25px 0 #00000022;
+    -webkit-box-shadow: 0 0 25px 0 #00000022;
+    background-color: #ffffff;
+    color: gray;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: none;
+    border-radius: 25px;
+    border: 0;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.button.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.button > .button-inner {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.button:active {
+    -webkit-transition-duration: 0.03s;
+    -moz-transition-duration: 0.03s;
+    transition-duration: 0.03s;
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    -o-transform: scale(0.95);
+    transform: scale(0.95);
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.overlay > .overlay-inner {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background: #00000099;
+}
+
+.overlay > .overlay-inner > .dialog {
+    background-color: white;
+    border-radius: 25px;
+    color: black;
+    padding: 25px;
+    max-width: 60%;
+}
+
+.overlay > .overlay-inner > .dialog > .header {
+    font-weight: bold;
+}
+
+.overlay > .overlay-inner > .dialog > .content {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+.application {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.page {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.sender-page {
+    color: black;
+    overflow-x: auto;
+}
+
+.page-title {
+    color: black;
+    padding: 25px;
+    text-align: center;
+}
+
+.device-type-page > .button {
+    margin: 25px;
+    color: white;
+}
+
+.device-type-page > .sender-button {
+    background-color: green;
+}
+
+.device-type-page > .receiver-button {
+    background-color: red;
+}
+
+.device-type-page > .test-button {
+    background-color: rgb(79, 79, 148);
+}
+
+.test-page {
+    background-color: black;
+}
+
+.sender-page > ul {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+}
+
+.sender-page > ul > li {
+    height: 100px;
+    width: 100%;
+}
+
+.sender-page > ul > li > .device-row {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-bottom: 1px solid black;
+    box-shadow: 4px 2px 8px;
+}
+
+.sender-page > ul > li > .device-row > .device-name {
+    flex-grow: 1;
+}
+
+.sender-page > ul > li > .device-row > .connect-button-wrapper {
+    width: 150px;
+}
+
+.sender-page > ul > li > .device-row > .connect-button-wrapper > .button {
+    background-color: green;
+    color: white;
+}
+
+.emotions-page {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.emotion-button {
+    height: 0;
+    width: calc(33% - 30px);
+    padding-bottom: calc(33% - 30px);
+    background-position: center;
+    background-size: contain;
+    margin: 5px;
+    background-repeat: no-repeat;
+}
+
+.emotion-1 {
+    background-image: url(../img/1.png);
+}
+
+.emotion-2 {
+    background-image: url(../img/2.png);
+}
+
+.emotion-3 {
+    background-image: url(../img/3.png);
+}
+
+.emotion-4 {
+    background-image: url(../img/4.png);
+}
+
+.emotion-5 {
+    background-image: url(../img/5.png);
+}
+
+.emotion-6 {
+    background-image: url(../img/6.png);
+}
+
+.emotion-7 {
+    background-image: url(../img/7.png);
+}
+
+.emotion-8 {
+    background-image: url(../img/8.png);
+}
+
+.emotion-9 {
+    background-image: url(../img/9.png);
+}
+
+.emotion-10 {
+    background-image: url(../img/10.png);
+}
+
+.emotion-11 {
+    background-image: url(../img/11.png);
+}
+
+.emotion-12 {
+    background-image: url(../img/12.png);
+}
+
+.emotion-13 {
+    background-image: url(../img/13.png);
+}
+
+.emotion-14 {
+    background-image: url(../img/14.png);
+}
+
+.emotion-15 {
+    background-image: url(../img/15.png);
+}
+
+.emotion-16 {
+    background-image: url(../img/16.png);
+}
+
+.emotion-17 {
+    background-image: url(../img/17.png);
+}
+
+.emotion-18 {
+    background-image: url(../img/18.png);
+}
+
+.emotion-selected {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}

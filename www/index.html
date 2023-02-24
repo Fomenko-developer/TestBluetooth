@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            http-equiv="Content-Security-Policy"
+            content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"
+        />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta
+            name="viewport"
+            content="initial-scale=1, width=device-width, viewport-fit=cover"
+        />
+        <meta name="color-scheme" content="light dark" />
+        <link rel="stylesheet" href="css/index.css" />
+        <title>TestBluetooth</title>
+    </head>
+    <body>
+        <div class="application">
+            <div id="device-type-page" class="page device-type-page">
+                <h1 class="page-title">
+                    Choose whether this device is a receiver or sender
+                </h1>
+                <div id="sender-button" class="button sender-button">
+                    <div class="button-inner">This is sender device</div>
+                </div>
+                <div id="receiver-button" class="button receiver-button">
+                    <div class="button-inner">This is receiver device</div>
+                </div>
+                <div id="test-button" class="button test-button">
+                    <div class="button-inner">PRESS THIS TO TEST IMAGE</div>
+                </div>
+            </div>
+            <div
+                id="receiver-page"
+                style="background-color: black"
+                class="page receiver-page"
+            >
+                <div id="emotion-selected" class="emotion-selected"></div>
+                <h1
+                    id="success-pair-message"
+                    style="display: none; position: absolute; top: 0"
+                >
+                    Devices successfully paired. Select emotion on a sender, and
+                    this page will show the image.
+                </h1>
+            </div>
+            <div id="test-page" class="page test-page">
+                <div id="test-selected" class="emotion-selected"></div>
+            </div>
+            <div
+                id="emotions-page"
+                style="background-color: black"
+                class="page emotions-page"
+            >
+                <div id="1" class="emotion-button emotion-1"></div>
+                <div id="2" class="emotion-button emotion-2"></div>
+                <div id="3" class="emotion-button emotion-3"></div>
+                <div id="4" class="emotion-button emotion-4"></div>
+                <div id="5" class="emotion-button emotion-5"></div>
+                <div id="6" class="emotion-button emotion-6"></div>
+                <div id="7" class="emotion-button emotion-7"></div>
+                <div id="8" class="emotion-button emotion-8"></div>
+                <div id="9" class="emotion-button emotion-9"></div>
+                <div id="10" class="emotion-button emotion-10"></div>
+                <div id="11" class="emotion-button emotion-11"></div>
+                <div id="12" class="emotion-button emotion-12"></div>
+                <div id="13" class="emotion-button emotion-13"></div>
+                <div id="14" class="emotion-button emotion-14"></div>
+                <div id="15" class="emotion-button emotion-15"></div>
+                <div id="16" class="emotion-button emotion-16"></div>
+                <div id="17" class="emotion-button emotion-17"></div>
+                <div id="18" class="emotion-button emotion-18"></div>
+            </div>
+            <div id="sender-page" class="page sender-page">
+                <h1 class="page-title">
+                    Select device from the list to connect
+                </h1>
+                <div id="refresh-devices-list" class="button">
+                    <div class="button-inner">Refresh list</div>
+                </div>
+                <ul id="devices-list"></ul>
+            </div>
+        </div>
+        <div class="overlay" id="dialog-overlay">
+            <div class="overlay-inner">
+                <div class="dialog">
+                    <div id="dialog-header" class="header">Header</div>
+                    <div id="dialog-content" class="content">Content</div>
+                    <div class="footer">
+                        <div id="dialog-ok-button" class="button">
+                            <div class="button-inner">OK</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="cordova.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/jquery.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.example.bluetooth" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>TestBluetooth</name>
+    <description>TestBluetooth</description>
+    <author email="developer.fomenko.artjoms@gmail.com" href="https://fomenko.app">
+        Artjoms Fomenko
+    </author>
+    <content src="index.html" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <preference name="SplashScreenDelay" value="1000" />
+    <preference name="AutoHideSplashScreen" value="true" />
+    <preference name="FadeSplashScreen" value="true"/>
+    <preference name="ShowSplashScreenSpinner" value="false"/>
+    <preference name="Fullscreen" value="true" />
+    <preference name="Orientation" value="portrait" />
+    <preference name="HideKeyboardFormAccessoryBar" value="true" />
+    <platform name="android">
+        <preference name="android-targetSdkVersion" value="28" />
+        <preference name="AndroidWindowSplashScreenBackground" value="#ffffff" />
+        <preference name="AndroidWindowSplashScreenIconBackgroundColor" value="#ffffff" />
+        <preference name="AndroidWindowSplashScreenAnimationDuration" value="1000"/>
+        <preference name="AndroidWindowSplashScreenAnimatedIcon" value="resources/android/icons/xxxhdpi.png" />
+        <preference name="Scheme" value="http" />
+        <icon density="ldpi" src="resources/android/icons/ldpi.png" />
+        <icon density="mdpi" src="resources/android/icons/mdpi.png" />
+        <icon density="hdpi" src="resources/android/icons/hdpi.png" />
+        <icon density="xhdpi" src="resources/android/icons/xhdpi.png" />
+        <icon density="xxhdpi" src="resources/android/icons/xxhdpi.png" />
+        <icon density="xxxhdpi" src="resources/android/icons/xxxhdpi.png" />
+
+        <splash density="land-ldpi" src="resources/android/splashes/240x320.png" />
+        <splash density="land-mdpi" src="resources/android/splashes/320x480.png" />
+        <splash density="land-hdpi" src="resources/android/splashes/480x800.png" />
+        <splash density="land-xhdpi" src="resources/android/splashes/720x1280.png" />
+        <splash density="land-xxhdpi" src="resources/android/splashes/960x1600.png" />
+        <splash density="land-xxxhdpi" src="resources/android/splashes/1280x1920.png" />
+
+        <splash density="port-ldpi" src="resources/android/splashes/320x240.png" />
+        <splash density="port-mdpi" src="resources/android/splashes/480x320.png" />
+        <splash density="port-hdpi" src="resources/android/splashes/800x480.png" />
+        <splash density="port-xhdpi" src="resources/android/splashes/1280x720.png" />
+        <splash density="port-xxhdpi" src="resources/android/splashes/1600x960.png" />
+        <splash density="port-xxxhdpi" src="resources/android/splashes/1920x1280.png" />
+    </platform>
+</widget>
